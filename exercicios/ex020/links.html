@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* 
+            #=id
+            .=class
+            :=pseudo-class
+            ::=pseudo-elemento
+            > = clildren
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(253, 151, 151);
+            color: white;
+        }
+
+        .especial::after {
+            content: ' ☜' ;
+            font-size: 25px;
+        }
+
+        .especial::before {
+            content: '☞';
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul type="square">
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" rel="external" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external" class="especial">Site do CursoemVideo</a></li>
+        <ol type="1">
+           <li>Esse site tem diversos cursos sobre Tecnologia, com certificado de conclusão. A maior parte dos cursos é sobre as Linguagens de Marcação e Programação.</li> 
+        </ol>
+    </ul>
+</body>
+</html>
