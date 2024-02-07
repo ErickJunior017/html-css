@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e agora vou gerenciar meu repositório!
  
- <a href="https://erickjunior017.github.io/html-css/desfio/d010/adroid.html">Executar o exercício 001</a>
+ <a href="https://erickjunior017.github.io/html-css/desfio/d010/adroid.html" target="_blanck">Executar o exercício 001</a>
