@@ -12,7 +12,7 @@
 
         table{
             border-collapse: collapse;
-            width: 500px;
+            width: 800px;
             height: 200px; position: relative;
         }
 
@@ -48,80 +48,66 @@
             background-color: chocolate;
         }
 
-        div{
-            margin: 50px;
-            background-color: black;
-            width: 500px; 
-            height: 500px;
-            border-radius: 10px;
+        div#container{
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
-    <table>
-        <colgroup>
-            <col id="nome">
-            <col id="sexo" span="2">
-            
-            <col id="profissao">
-        </colgroup>
-
-        <caption>Cadastro</caption>
-
-        <thead>
-            <th scope="col">Nome</th>
-            <th scope="col">Sexo</th>
-            <th scope="col">Idade</th>
-            <th scope="col">Profissão</th>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Ana Maria</td>
-                <td>F</td>
-                <td>25</td>
-                <td>Jornalista</td>
-            </tr>
-
-            <tr>
-                <td>Claudio</td>
-                <td>M</td>
-                <td>28</td>
-                <td>Motorista</td>
-            </tr>
-
-            <tr>
-                <td>Renata</td>
-                <td>F</td>
-                <td>65</td>
-                <td>Aposentada</td>
-            </tr>
-
-            <tr>
-                <td>João Paulo</td>
-                <td>M</td>
-                <td>45</td>
-                <td>Engenheiro de Software</td>
-            </tr>
-
-            <tr>
-                <td>Rodrigo</td>
-                <td>M</td>
-                <td>38</td>
-                <td>Mecânico</td>
-            </tr>
-
-            <tr>
-                <td>Katia</td>
-                <td>F</td>
-                <td>39</td>
-                <td>Recepicionista</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div>
-
+    <div id="container">
+        <table>
+            <colgroup>
+                <col id="nome">
+                <col id="sexo" span="2">
+        
+                <col id="profissao">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <thead>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Claudio</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>Motorista</td>
+                </tr>
+                <tr>
+                    <td>Renata</td>
+                    <td>F</td>
+                    <td>65</td>
+                    <td>Aposentada</td>
+                </tr>
+                <tr>
+                    <td>João Paulo</td>
+                    <td>M</td>
+                    <td>45</td>
+                    <td>Engenheiro de Software</td>
+                </tr>
+                <tr>
+                    <td>Rodrigo</td>
+                    <td>M</td>
+                    <td>38</td>
+                    <td>Mecânico</td>
+                </tr>
+                <tr>
+                    <td>Katia</td>
+                    <td>F</td>
+                    <td>39</td>
+                    <td>Recepicionista</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
