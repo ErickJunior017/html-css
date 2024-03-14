@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadstro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <p>
+                <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="esfut" id="iesfut" checked ><label for="iesfut" >Futebol</label> <br>
+                
+                <input type="checkbox" name="basq" id="ibasq"><label for="ibasq">Basquete</label> <br>
+
+                <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label> <br>
+
+                <input type="checkbox" name="tenis" id="itenis"><label for="itenis">Tênis</label> <br>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="isxfem" checked><label for="isxfem">Feminino</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
