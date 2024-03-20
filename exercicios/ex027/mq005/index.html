@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media qery</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>POLÍTICA</h2>
+            <p>O projeto do governo federal de criar um Museu da Memória e dos Direitos Humanos, focado no período da ditadura militar, naufragou. A iniciativa foi lançada pelo ex-ministro da Justiça, Flávio Dino, durante viagem ao Chile em setembro de 2023, durante um evento para rememorar os 50 anos do golpe militar naquele país.
+
+                Segundo fontes do Ministério da Justiça e do Palácio do Planalto, o projeto não avançou e nem sairá do papel, uma vez que há uma decisão do presidente Luiz Inácio Lula da Silva de não provocar atritos com os militares.
+                
+                Ao anunciar o museu, Dino havia prometido que a pasta entraria com recursos para executar o projeto. “Nós devemos ao Brasil e vamos pagar essa dívida com a criação, no Brasil, de um Museu da Memória e dos Direitos Humanos. O ministro Sílvio [Almeida, dos Direitos Humanos], que aqui está junto com o Nilmário Miranda, assessor de Memória do Ministério dos Direitos Humanos, entram com os talentos e capacidade e o Ministério da Justiça entra com o capital para levar essa ideia adiante.”
+           </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
