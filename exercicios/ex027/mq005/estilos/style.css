@@ -7,11 +7,11 @@
 }
 
 html, body{
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(119, 119, 119);
 }
 
 header{
-    background-color: gray;
+    background-color: rgb(163, 160, 160);
 }
 
 header h1{

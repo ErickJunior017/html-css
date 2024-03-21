@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media qery</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-qery.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body onresize="mudoTamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -40,6 +41,14 @@
                 itens.style.display = 'none'
             }else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudoTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else { 
+                itens.style.display = 'none'
             }
         }
     </script>
