@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nacontent="width=device-width, initial-scale=1.0">
     <title>Css Flex</title>
     <style>
         body{
@@ -22,6 +22,7 @@
            max-width: 600px;
            margin: 0 auto;
            border: 1px solid #000000;
+           flex-flow: column wrap;
         }
 
         .flexivel{
@@ -40,10 +41,15 @@
         .quebra{
             flex-wrap: wrap;
         }
+
+        .fluxo-horizontal-quebra{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
-    <div class="container flexivel horizontal quebra">
+    <div class="flexivel container fluxo-horizontal-quebra">
         <div class="item">CFB Cursos 1</div>
         <div class="item">CFB Cursos 2</div>
         <div class="item">CFB Cursos 3</div>
@@ -53,6 +59,7 @@
         <div class="item">CFB Cursos 7</div>
         <div class="item">CFB Cursos 8</div>
         <div class="item">CFB Cursos 9</div>
+        <div class="item">CFB Cursos 10</div>
     </div>
 </body>
 </html>
