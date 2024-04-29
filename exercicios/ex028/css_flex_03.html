@@ -20,8 +20,12 @@
 
         .container{
            max-width: 600px;
-           margin: 0 auto;
+           margin: auto;
+           height: 400px;
            border: 1px solid #000000;
+           justify-content: center;/* eixo principal*/
+          /*align-items: center; /* eixo secundario align items distrui automaticamente o espaço*/
+           align-content: space-between;/*  ele nao destribui o espaço */
         }
 
         .flexivel{
@@ -41,23 +45,53 @@
             flex-wrap: wrap;
         }
 
-        .fluxo-horizontal-quebra{
-           flex-flow: row wrap; 
-        }
+       .tam0{
+        flex-grow: 0;
+       }
+
+       .tam1{/*  Quando tem flex-grow no item o justfy content não funciona no item */
+        flex-grow: 1;
+       }
+
+       .tam2{
+        flex-grow: 2;
+       }
+
+       .tam3{
+        flex-grow: 3;
+       }
+
+       .tam4{
+        flex-grow: 4;
+       }
+
+       .basea{
+        flex-basis: auto;
+       }
+
+       .base0{
+        flex-basis: 0;
+       }
+
+       .base1{
+        flex-basis: 1;
+       }
+
+       .base2{
+        flex-basis: 2;
+       }
+
+       .base3{/**/
+        flex-basis: 3;
+       }
     </style>
 </head>
 <body>
-    <div class="flexivel container fluxo-horizontal-quebra">
-        <div class="item">CFB Cursos 1</div>
-        <div class="item">CFB Cursos 2</div>
-        <div class="item">CFB Cursos 3</div>
-        <div class="item">CFB Cursos 4</div>
-        <div class="item">CFB Cursos 5</div>
-        <div class="item">CFB Cursos 6</div>
-        <div class="item">CFB Cursos 7</div>
-        <div class="item">CFB Cursos 8</div>
-        <div class="item">CFB Cursos 9</div>
-        <div class="item">CFB Cursos 10</div>
-    </div>
+    <div class="flexivel container horizontal quebra">
+        <div class="item tam1 base0">CFB Cursos </div>
+        <div class="item tam1 base1">CFB Cursos </div>
+        <div class="item tam1 base1">CFB Cursos </div>
+        <div class="item tam1 base1">CFB Cursos </div>
+        
 </body>
 </html>
