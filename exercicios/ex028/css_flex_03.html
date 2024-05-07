@@ -16,6 +16,7 @@
             text-align: center;
             font-size: 1em;
             color: white;
+            width: 200px;
         }
 
         .container{
@@ -24,8 +25,8 @@
            height: 400px;
            border: 1px solid #000000;
            justify-content: center;/* eixo principal*/
-          /*align-items: flex-start; /* eixo secundario align items distrui automaticamente o espaço*/
-            align-content: space-between;/* ele nao destribui o espaço */
+          align-items: center; /* eixo secundario align items distrui automaticamente o espaço*/
+            /*align-content: center;/* ele nao destribui o espaço */
         }
 
         .flexivel{
@@ -100,14 +101,22 @@
        .orden3{
         order: 3;
        }
+
+       .reduzir{
+        flex-shrink: 0;
+       }
+
+       .reduzir1{
+        flex-shrink: 1;
+       }
     </style>
 </head>
 <body>
-    <div class="flexivel container horizontal quebra">
-        <div class="item base1 orden3">CFB Cursos 1</div>
-        <div class="item base1 orden1">CFB Cursos 2</div>
-        <div class="item base1 orden0">CFB Cursos 3</div>
-        <div class="item base1 orden3" style="order: 0">CFB Cursos 4</div>
+    <div class="flexivel container horizontal ">
+        <div class="item  tam1 reduzir">CFB Cursos</div>
+        <div class="item  tam1 reduzir1">CFB Cursos 2</div>
+        <div class="item  tam1 reduzir1">CFB Cursos 3</div>
+        <div class="item  tam1 reduzir1">CFB Cursos 4</div>
         
 </body>
 </html>
