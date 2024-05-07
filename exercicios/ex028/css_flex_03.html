@@ -84,14 +84,30 @@
        .base3{/**/
         flex-basis: 3;
        }
+
+       .orden0{
+        order: 0;
+       }
+
+       .orden1{
+        order: 1;
+       }
+
+       .orden2{
+        order: 2;
+       }
+
+       .orden3{
+        order: 3;
+       }
     </style>
 </head>
 <body>
     <div class="flexivel container horizontal quebra">
-        <div class="item base1 ">CFB Cursos </div>
-        <div class="item base1 ">CFB Cursos </div>
-        <div class="item base1 ">CFB Cursos </div>
-        
+        <div class="item base1 orden3">CFB Cursos 1</div>
+        <div class="item base1 orden1">CFB Cursos 2</div>
+        <div class="item base1 orden0">CFB Cursos 3</div>
+        <div class="item base1 orden3" style="order: 0">CFB Cursos 4</div>
         
 </body>
 </html>
