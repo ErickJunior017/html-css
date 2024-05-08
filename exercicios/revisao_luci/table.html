@@ -16,11 +16,29 @@
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            font-size: 1.2em;
         }
 
         td, th{
             border: 1px solid black;
             padding: 5px;
+            
+        }
+
+        td{
+            text-align: right;
+        }
+
+        th{
+            text-align: left;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: rgba(0, 174, 255, 0.582);
+        }
+
+        tbody tr:nth-child(even){
+            background-color: rgba(4, 0, 255, 0.582);
         }
         
         
@@ -30,7 +48,7 @@
     <table>
         <thead>
             <tr>
-                <th colspan="6">Boletim Escolar</th>
+                <th colspan="6" style="text-align: center;">Boletim Escolar</th>
             </tr>
         </thead>
 
